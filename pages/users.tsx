@@ -1,19 +1,23 @@
-import { User } from "@/entities/user.js";
+import UserCard from "@/components/UserCard";
+import { User } from "@/entities/user";
+import { List, ListItem, Typography } from "@mui/material";
 import axios from "axios";
 import { GetServerSideProps } from "next";
 
 export default function Users(props: { users: User[] }) {
   return (
-    <div>
-      <h1>All users Accounts</h1>
-      <ul>
+    <>
+      <Typography variant="h2" gutterBottom>
+        User Accounts
+      </Typography>
+      <List>
         {props.users.map((user) => (
-          <li key={user.id}>
-            {user.id} {user.service}
-          </li>
+          <ListItem disablePadding key={user.id}>
+            <UserCard user={user} />
+          </ListItem>
         ))}
-      </ul>
-    </div>
+      </List>
+    </>
   );
 }
 
