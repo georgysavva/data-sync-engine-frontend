@@ -13,7 +13,7 @@ This repository contains a basic UI to display the data served by data-sync-engi
 
 ## How to view data
 
-Go to `http://localhost:3000/users` and click around.
+Go to `http://localhost:3000/users`. The page displays all user accounts, with each user account having a "Data" button. Click it to go to a separate page with all Stripe/Hubspot data corresponding to that user account. On that page, you can additionally filter Stripe Customers and Hubspot Contacts by their email address.
 
 ## Tech stack
 
