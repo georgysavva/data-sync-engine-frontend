@@ -12,7 +12,7 @@ const HubSpotContactCard = (props: { hubspotContact: HubspotContact }) => {
           Email: {props.hubspotContact.email}
         </Typography>
         <Typography component="div">
-          Data: <pre>{JSON.stringify(props.stripeCustomer.data, null, 2)}</pre>
+          Data: <pre>{JSON.stringify(props.hubspotContact.data, null, 2)}</pre>
         </Typography>
       </CardContent>
     </Card>
