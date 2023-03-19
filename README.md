@@ -1,6 +1,6 @@
 # data-sync-engine-frontend
 
-This repository contains a basic UI to display the data served by data-sync-engine API. The design and UX pattern are primitive just to no spend time on visual polishing.
+This repository contains a rudimentary UI to display the data served by the [`data-sync-engine`](https://github.com/georgysavva/data-sync-engine) API. The design and UX pattern are primitive, just not to spend time on visual polishing.
 
 ## How to run
 
@@ -13,8 +13,8 @@ This repository contains a basic UI to display the data served by data-sync-engi
 
 ## How to view data
 
-Go to `http://localhost:3000/users`. The page displays all user accounts, with each user account having a "Data" button. Click it to go to a separate page with all Stripe/Hubspot data corresponding to that user account. On that page, you can additionally filter Stripe Customers and Hubspot Contacts by their email address.
+Go to `http://localhost:3000/users`. The page displays all user accounts, each with a "Data" button. Click it to go to a separate page with all Stripe/Hubspot data corresponding to that user account. On that page, you can additionally filter Stripe Customers and Hubspot Contacts by their email address.
 
 ## Tech stack
 
-This project is built using React, Next.js, TypeScript and Material UI components.
+This project uses React, Next.js, TypeScript, and Material UI components.
